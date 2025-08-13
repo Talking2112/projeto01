@@ -11,8 +11,25 @@
         <input type="text" name="nome" placeholder="Digite o nome da pessoa" required> 
         <button>Buscar</button>
     </form>
-    <div id="resultado"></div> 
+    <div id="resultado"></div>
+
+    <h1>Pesquisar carros</h1>
+    <form id="formulario2">
+        <input type="text" name="marca" placeholder="Digite a marca do carro" required> 
+        <button>Buscar</button>
+    </form>
+    <div id="resultado2"></div>
+
+    <h1>Pesquisar filmes</h1>
+    <form id="formulario3">
+        <input type="text" name="titulo" placeholder="Digite o titulo do filme" required> 
+        <button>Buscar</button>
+    </form>
+    <div id="resultado3"></div>
+
     <script>
+        const formulario = document.getElementById('formulario');
+        const resultado = document.getElementById('resultado');
         formulario.onsubmit = async e => {
             e.preventDefault();
             let res = await fetch(
@@ -21,11 +38,43 @@
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({nome: formulario.nome.value})
-                })
-                resultado.innerHTML = (await res.json()).map(pessoa =>
-                    `${pessoa.id} - ${pessoa.nome} - ${pessoa.cidade}`
-                ).join('<br>');
-        }
+                });
+            resultado.innerHTML = (await res.json()).map(pessoa =>
+                `${pessoa.id} - ${pessoa.nome} - ${pessoa.cidade}`
+            ).join('<br>');
+        };
+
+        const formulario2 = document.getElementById('formulario2');
+        const resultado2 = document.getElementById('resultado2');
+        formulario2.onsubmit = async e => {
+            e.preventDefault();
+            let res = await fetch(
+                'http://localhost:3000/buscarCarros', 
+                {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({marca: formulario2.marca.value})
+                });
+            resultado2.innerHTML = (await res.json()).map(carro =>
+                `${carro.id} - ${carro.marca} - ${carro.ano}`
+            ).join('<br>');
+        };
+
+        const formulario3 = document.getElementById('formulario3');
+        const resultado3 = document.getElementById('resultado3');
+        formulario3.onsubmit = async e => {
+            e.preventDefault();
+            let res = await fetch(
+                'http://localhost:3000/buscarFilmes', 
+                {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({titulo: formulario3.titulo.value})
+                });
+            resultado3.innerHTML = (await res.json()).map(filme =>
+                `${filme.id} - ${filme.titulo} - ${filme.ano}`
+            ).join('<br>');
+        };
     </script>        
 </body>
 </html>
