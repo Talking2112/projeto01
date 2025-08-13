@@ -1,0 +1,12 @@
+[
+  { "id": 1, "marca": "Toyota", "modelo": "Corolla", "ano": 2020, "cor": "Prata", "placa": "ABC1D23", "preco": 85000 },
+  { "id": 2, "marca": "Honda", "modelo": "Civic", "ano": 2019, "cor": "Preto", "placa": "XYZ9E88", "preco": 92000 },
+  { "id": 3, "marca": "Chevrolet", "modelo": "Onix", "ano": 2021, "cor": "Branco", "placa": "JKL4F56", "preco": 68000 },
+  { "id": 4, "marca": "Ford", "modelo": "Ka", "ano": 2018, "cor": "Vermelho", "placa": "MNO7G89", "preco": 43000 },
+  { "id": 5, "marca": "Volkswagen", "modelo": "Golf", "ano": 2020, "cor": "Azul", "placa": "PQR2H34", "preco": 98000 },
+  { "id": 6, "marca": "Fiat", "modelo": "Argo", "ano": 2021, "cor": "Cinza", "placa": "STU5I67", "preco": 67000 },
+  { "id": 7, "marca": "Hyundai", "modelo": "HB20", "ano": 2019, "cor": "Branco", "placa": "VWX8J01", "preco": 59000 },
+  { "id": 8, "marca": "Nissan", "modelo": "Kicks", "ano": 2022, "cor": "Preto", "placa": "YZA3K45", "preco": 112000 },
+  { "id": 9, "marca": "Renault", "modelo": "Duster", "ano": 2020, "cor": "Verde", "placa": "BCD6L78", "preco": 87000 },
+  { "id": 10, "marca": "Jeep", "modelo": "Compass", "ano": 2021, "cor": "Marrom", "placa": "EFG9M12", "preco": 152000 }
+]

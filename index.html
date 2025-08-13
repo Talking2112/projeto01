@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 1</title>
+</head>
+<body>
+    <h1>Pesquisar pessoas</h1>
+    <form id="formulario">
+        <input type="text" name="nome" placeholder="Digite o nome da pessoa" required> 
+        <button>Buscar</button>
+    </form>
+    <div id="resultado"></div> 
+    <script>
+        formulario.onsubmit = async e => {
+            e.preventDefault();
+            let res = await fetch(
+                'http://localhost:3000/buscarPessoas', 
+                {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({nome: formulario.nome.value})
+                })
+                resultado.innerHTML = (await res.json()).map(pessoa =>
+                    `${pessoa.id} - ${pessoa.nome} - ${pessoa.cidade}`
+                ).join('<br>');
+        }
+    </script>        
+</body>
+</html>

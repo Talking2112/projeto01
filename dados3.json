@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "titulo": "Homem de Ferro",
+    "ano": 2008,
+    "universo": "Marvel",
+    "diretor": "Jon Favreau",
+    "genero": "Ação, Ficção Científica",
+    "duracao_minutos": 126
+  },
+  {
+    "id": 2,
+    "titulo": "Capitão América: O Primeiro Vingador",
+    "ano": 2011,
+    "universo": "Marvel",
+    "diretor": "Joe Johnston",
+    "genero": "Ação, Aventura",
+    "duracao_minutos": 124
+  },
+  {
+    "id": 3,
+    "titulo": "Os Vingadores",
+    "ano": 2012,
+    "universo": "Marvel",
+    "diretor": "Joss Whedon",
+    "genero": "Ação, Aventura, Ficção Científica",
+    "duracao_minutos": 143
+  },
+  {
+    "id": 4,
+    "titulo": "Mulher-Maravilha",
+    "ano": 2017,
+    "universo": "DC",
+    "diretor": "Patty Jenkins",
+    "genero": "Ação, Fantasia",
+    "duracao_minutos": 141
+  },
+  {
+    "id": 5,
+    "titulo": "Batman vs Superman: A Origem da Justiça",
+    "ano": 2016,
+    "universo": "DC",
+    "diretor": "Zack Snyder",
+    "genero": "Ação, Fantasia",
+    "duracao_minutos": 151
+  },
+  {
+    "id": 6,
+    "titulo": "Aquaman",
+    "ano": 2018,
+    "universo": "DC",
+    "diretor": "James Wan",
+    "genero": "Ação, Aventura, Fantasia",
+    "duracao_minutos": 143
+  },
+  {
+    "id": 7,
+    "titulo": "Guardiões da Galáxia",
+    "ano": 2014,
+    "universo": "Marvel",
+    "diretor": "James Gunn",
+    "genero": "Ação, Aventura, Comédia",
+    "duracao_minutos": 121
+  },
+  {
+    "id": 8,
+    "titulo": "Thor: Ragnarok",
+    "ano": 2017,
+    "universo": "Marvel",
+    "diretor": "Taika Waititi",
+    "genero": "Ação, Aventura, Comédia",
+    "duracao_minutos": 130
+  },
+  {
+    "id": 9,
+    "titulo": "Esquadrão Suicida",
+    "ano": 2016,
+    "universo": "DC",
+    "diretor": "David Ayer",
+    "genero": "Ação, Aventura",
+    "duracao_minutos": 123
+  },
+  {
+    "id": 10,
+    "titulo": "Pantera Negra",
+    "ano": 2018,
+    "universo": "Marvel",
+    "diretor": "Ryan Coogler",
+    "genero": "Ação, Aventura, Ficção Científica",
+    "duracao_minutos": 134
+  }
+]
